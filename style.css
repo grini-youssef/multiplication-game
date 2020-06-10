@@ -1,0 +1,99 @@
+*
+{
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+body
+{
+    justify-content: center;
+    align-items: center;
+}
+div
+{
+    /* border: 1px solid red; */
+}
+#div1
+{
+    border: 2px solid #000;
+    max-width: 900px;
+    max-height: 600px;
+    text-align: center;
+    margin: 40px auto;
+    background: #88ccd8;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+#div1 div
+{
+    display: inline-block;
+    text-align: left;
+}
+
+#div1 div#menu
+{
+    float: left;
+    margin: 10px 10px;
+    width: 20%;
+    height: 420px;
+    position: relative;
+    background: #124e80;
+    z-index: 20;
+    border-radius: 8px;
+}
+
+.play, .reset
+{
+    width: 80%;
+    height: 40px;
+    margin: 13px auto;
+    max-width: 120px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 0 auto;
+    border-radius: 2px;
+}
+
+div#questionDiv
+{
+    width: 70%;
+    min-height: 450px;
+}
+
+#questionDiv div
+{
+    display: block;
+    margin: 55px;
+}
+#questionDiv #question,#questionDiv #answers
+{
+    text-align: center;
+    font-size: 34px;
+}
+
+#answers button
+{
+    width: 140px;
+    height: 50px;
+    margin: 20px 20px 10px 10px;
+    font-size: 30px;
+
+}
+
+.resultQuestion
+{
+    width: 80%;
+    height: 30px;
+    font-size: 20px;
+    color: green;
+    font-family: "sans-serif";
+}
+.currentQuestion
+{
+    height: 25px;
+    font-family: "sans-serif";
+}
