@@ -6,13 +6,13 @@ $(document).ready(function () {
     //number the current question
     var n;
     //count number the question correct
-    var a=0;
+    var a;
     //count number the question error
-    var b=0;
+    var b;
     //resolve the probleme the two answer incorrect in same question
-    var confusion2 ;
+    var confusion2;
     //resolve the probleme the answer after answer incorrect
-    var confusion = false;
+    var confusion;
     //function for wait between two question
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
@@ -67,7 +67,8 @@ $(document).ready(function () {
     $(".play").click(function() {
         $(this).attr("disabled","disabled");
         n=1;
-        a=0,b=0;
+        a=0;
+        b=0;
         generateQuestion();
     });
 
@@ -77,7 +78,9 @@ $(document).ready(function () {
         if(answer == correctAnswer){
             if(confusion==false){
                 //count number the question correct
+                console.log(a);
                 a++;
+                console.log(a);
             }
             $(this).css("background-color", "rgb(34, 180, 4)");
             $(".resultQuestion").css("color", "green");
@@ -88,7 +91,7 @@ $(document).ready(function () {
 
         }
         else{
-            if(confusion2=false){
+            if(confusion2==false){
                 b++;
                 confusion2=true;
             }
