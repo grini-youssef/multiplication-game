@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".resultQuestion").text("Click on Play for start ");
+    $(".resultQuestion").text("Click On Play To Start ");
     $(".currentQuestion").text("");
     $(".resultQuestion").css({"color": "red"});
 
